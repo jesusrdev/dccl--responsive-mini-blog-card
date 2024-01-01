@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+
+.minimal-blog-card {
+  max-width: 336px;
+  padding: 16px;
+  border-radius: 16px;
+
+  border: 1px solid #FAFAF9;
+
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.1);
+
+  .card-header {
+
+    & img {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    margin-bottom: 16px;
+  }
+
+  .card-body {
+
+    margin: 16px 0;
+
+    .card-tags {
+      margin: 0;
+
+      & tag {
+        padding: 6px 16px;
+        border-radius: 16px;
+
+        background-color: #E6D6FC;
+        color: #883AE1;
+
+        font-family: 'Sora';
+        font-size: 0.625rem;
+        font-weight: 500;
+      }
+    }
+
+    .card-title {
+      font-family: 'Sora';
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #20293A;
+    }
+
+    .card-text {
+      font-family: 'Sora';
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: #6C727F;
+    }
+  }
+
+  .card-footer {
+    margin: 4px 0;
+
+    & small {
+      font-family: 'Sora';
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: #6C727F;
+    }
+  }
+}
